@@ -11,7 +11,7 @@
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
     
-    <nav>
+    <nav id="navbar">
       <img class="logo" src="/src/assets/Netflix-Logo.wine.svg" alt="Logo Netflix">
       <a href="#">Accueil</a>
       <a href="#">Séries</a>
@@ -28,12 +28,12 @@
           <p>Séries 1</p>
         </div>
         <div class="box">
-          <img src="/src/assets/2V1wDes0PdlfWe37x8S2829974g-I0J-K5wwGtAMtXGGHq1PXp2ceQX4mf5w6IcXmP6hA7Yk2jsg.jpg" alt="Series 2">
+          <img src="/src/assets/image netflix/ZTM0b3GwV3BQu4Xhds-Wo-KuaTl0V9MAB8VqEjMvMRgurmiu8eUgKvU80u9NPpCJpIoBGYEwp5s2.webp" alt="Series 2">
           <p>Séries 2</p>
         </div>
         <div class="box">
           <img src="/src/assets/2WgbO6o6jYb9My4Ym8e_t_NXg6EtJ7sdzpwNaAF5h7koj8EW2Xy3R0WEd3SmvUXq8rKoimAuqLrR.jpg" alt="Series 3">
-          <p>Séries 3</p>
+          <p>Séries 3 </p>
         </div>
 
         <div class="box">
@@ -53,7 +53,7 @@
           <p>Séries 1</p>
         </div>
         <div class="box">
-          <img src="/src/assets/2V1wDes0PdlfWe37x8S2829974g-I0J-K5wwGtAMtXGGHq1PXp2ceQX4mf5w6IcXmP6hA7Yk2jsg.jpg" alt="Series 2">
+          <img src="/src/assets/image netflix/ZTM0b3GwV3BQu4Xhds-Wo-KuaTl0V9MAB8VqEjMvMRgurmiu8eUgKvU80u9NPpCJpIoBGYEwp5s2.webp" alt="Series 2">
           <p>Séries 2</p>
         </div>
         <div class="box">
@@ -74,4 +74,30 @@
     </div>
     
   </body>
+  <script>
+    // Liste d'URL d'images
+    var images = [
+      "/src/assets/1tJL64ymoxkFzu7_JliCKAUKSxmpuafXXi0mbqd1WnGr-jvKqRA_qEhc2dGSB1Sh2ro9yi9DQrfP.jpg",
+      "/src/assets/quJV1Q5xbTJy5O2_MvFrxkdcY4q4YGCZiwby3qCv8Lmj_DNxc7-XeuOW49zI-dckTujhBKlCnAbI2.jpg",
+      "/src/assets/quJV1Q5xbTJy5O2_MvFrxkdcY4q4YGCZiwby3qCv8Lmj_DNxc7-XeuOW49zI-dckTujhBKlCnAbI2.jpg",
+      "/src/assets/quJV1Q5xbTJy5O2_MvFrxkdcY4q4YGCZiwby3qCv8Lmj_DNxc7-XeuOW49zI-dckTujhBKlCnAbI2.jpg",
+      'https://via.placeholder.com/150x150'
+    ];
+    
+    // Fonction pour générer des éléments HTML aléatoires
+    function generateBox() {
+      var randomIndex = Math.floor(Math.random() * images.length);
+      var randomImage = images[randomIndex];
+      var box = document.createElement('div');
+      box.classList.add('box');
+      box.innerHTML = '<img src="' + randomImage + '" alt="image">';
+      return box;
+    }
+    
+    // Ajout de boîtes aléatoires à la page
+    for (var i = 0; i < 20; i++) {
+      document.body.appendChild(generateBox());
+    }
+  </script>
+
 </html>
