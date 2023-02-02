@@ -1,0 +1,26 @@
+
+nav {
+  display: flex;
+  align-items: flex;
+  justify-content: left;
+  height: 66px;
+}
+
+nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+  float: left; /* effet flottant */
+  text-decoration: none; /* pas d'héritage avec effet souligné */
+  color:aliceblue;
+  height: 36px; /* hauteur */
+  line-height: 60px; /* interligne */
+  padding: 0 10px; /* marges intérieur */
+  font-family: sans-serif; /* police d'écriture */
+  font-size: 13px; /* taille du texte */
+  transition: .5s; /* temps de transition lors du hover : une demi seconde */
+  }
+  nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+  background: #ff270a; /* couleur de fond */
+  }
+
+  body{
+    background-color: rgba(0, 0, 0, 0.90);
+  }
