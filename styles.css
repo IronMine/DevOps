@@ -2,24 +2,111 @@ nav {
   display: flex;
   align-items: flex;
   justify-content: left;
-  height: 66px;
+  height: 80px;
 }
 
 nav  a{ /* tous les liens a à l'intérieur de la balise nav */
   float: left; /* effet flottant */
   text-decoration: none; /* pas d'héritage avec effet souligné */
   color:aliceblue;
-  height: 36px; /* hauteur */
+  height: 40px; /* hauteur */
   line-height: 60px; /* interligne */
   padding: 0 10px; /* marges intérieur */
   font-family: sans-serif; /* police d'écriture */
-  font-size: 13px; /* taille du texte */
+  font-size: 15px; /* taille du texte */
   transition: .5s; /* temps de transition lors du hover : une demi seconde */
   }
+  
   nav  a:hover{ /* tous liens lors du survol dans la balise nav */
-  background: #ff270a; /* couleur de fond */
+  background: #ff0000ab; /* couleur de fond */
   }
+  
+  input[type=text] {
+    display: flex;
+    height: 45px;
+    width: 150px;
+    
+  }
+
+
+  /* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
 
   body{
     background-color: rgba(0, 0, 0, 0.90);
+    font-family: sans-serif; /* police d'écriture */
   }
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    margin-top: 50px;
+    color:aliceblue;
+
+  }
+  
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:aliceblue;
+    margin-top: 50px;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    
+  }
+
+  img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: flex;
+    justify-content: left;
+    width: 100px;
+    float: left; /* effet flottant */
+    color:aliceblue;
+    height: 60px; /* hauteur */
+    line-height: 60px; /* interligne */
+    padding: 0 25px; /* marges intérieur */
+  }
+  
+  p {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
