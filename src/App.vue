@@ -8,11 +8,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/Sign-in">Sign-in</RouterLink>
-        <RouterLink to="/Netflix">Netflix</RouterLink>
-      </nav>
+    
     </div>
   </header>
 
