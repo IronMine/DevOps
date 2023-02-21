@@ -20,7 +20,7 @@
       <span> by DevOpsFlix Team </span>
     </div>
 <div>
- Tristan, Teyssir, Marwan, Czmil,Sami
+ Teyssir, Marwan, Czmil,Sami
 </div>
   </div>
 </template>
