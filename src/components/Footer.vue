@@ -13,21 +13,13 @@
     "
   >
     <div class="flex items-center space-x-1">
-      <span>Made with</span>
+      <span>Made by</span>
       <span class="text-red-500">
         <IconHeart />
       </span>
-      <span> by hoangvu12 </span>
+      <span> by DevOpsFlix Team </span>
     </div>
 
-    <a :href="GITHUB_URL" target="_blank">
-      <div class="hidden sm:flex items-center space-x-1">
-        <span>
-          <IconGithub />
-        </span>
-        <span>hoangvu12</span>
-      </div>
-    </a>
   </div>
 </template>
 
