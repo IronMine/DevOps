@@ -25,17 +25,9 @@
 
 <script>
 import IconHeart from "~icons/ion/md-heart";
-import IconGithub from "~icons/mdi/github";
-import { GITHUB_URL } from "../constants";
 
 export default {
-  data() {
-    return {
-      GITHUB_URL,
-    };
-  },
   components: {
-    IconGithub,
     IconHeart,
   },
 };
