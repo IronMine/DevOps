@@ -20,7 +20,7 @@
       <span> by DevOpsFlix Team </span>
     </div>
 <div>
-  Tristan
+  Tristan, Teyssir
 </div>
   </div>
 </template>
