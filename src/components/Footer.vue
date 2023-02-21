@@ -19,7 +19,9 @@
       </span>
       <span> by DevOpsFlix Team </span>
     </div>
-
+<div>
+  Tristan
+</div>
   </div>
 </template>
 
