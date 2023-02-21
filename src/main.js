@@ -1,11 +1,21 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp, h } from "vue";
+import VueLazyload from "@jambonn/vue-lazyload";
 
-import './assets/main.css'
+import App from "./App.vue";
+import router from "./pages";
 
-const app = createApp(App)
+import "./index.css";
 
-app.use(router)
+import error from "./assets/error.png";
 
-app.mount('#app')
+createApp({
+  render: () => h(App),
+})
+  .use(router)
+  .use(VueLazyload, {
+    observer: true,
+    preLoad: 1.3,
+    error,
+    attempt: 1,
+  })
+  .mount("#app");
